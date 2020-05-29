@@ -1,3 +1,5 @@
+import RNC from 'react-native-css';
+
 export const style=`
    d-none {display: none;}
    container_fluid{max-width: 1241px ; margin:0 auto;}
@@ -122,3 +124,6 @@ export const style=`
         padding-right: 15px;
     padding-left: 15px;
     }`;
+
+const styles = RNC`${style}`;
+export default styles;

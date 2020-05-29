@@ -1,13 +1,4 @@
 import React, { Fragment } from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-
 import DashboardCard from './dashboardCard'
 
 const data=[
@@ -36,15 +27,15 @@ const data=[
 export default function dashboardList() {
   return (
     // <div className="container mt_50">	
-	// <h1>Dashboard</h1>
-	<Fragment className="d-flex flex-wrap mt_10 dashboard_block">
-        {data.map(el=>{
-            const {title, icon, text} = el;
-            return (
-                <DashboardCard title={title} icon={icon} text={text} />
-            );
-        })}
-    </Fragment>
-// </div>
+    //     <h1>Dashboard</h1>
+        <Fragment className="d-flex flex-wrap mt_10 dashboard_block">
+            {data.map(el=>{
+                const {title, icon, text} = el;
+                return (
+                    <DashboardCard title={title} icon={icon} text={text} />
+                );
+            })}
+        </Fragment>
+    // </div>
   );
 };

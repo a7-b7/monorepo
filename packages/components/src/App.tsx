@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 import Dashboard from './components/dashboardList';
-import { AppHeader } from './AppHeader'
+// import { AppHeader } from './AppHeader'
 
 export function App() {
   return (
