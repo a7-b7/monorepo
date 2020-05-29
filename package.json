@@ -1,0 +1,27 @@
+{
+  "name": "myprojectname",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "android": "yarn workspace mobile android",
+    "metro": "yarn workspace mobile start",
+    "web": "yarn workspace web start",
+    "compile": "tsc -b --incremental",
+    "ios": "yarn workspace mobile  ios",
+    "studio": "yarn workspace mobile studio",
+    "xcode": "yarn workspace mobile xcode"
+  },
+  "dependencies": {
+    "@types/react-native": "^0.62.12",
+    "react-native": "*",
+    "react-native-dashboard": "0.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}
