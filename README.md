@@ -29,13 +29,6 @@ _Requirements: [React Native](https://facebook.github.io/react-native/docs/getti
       - _You may need to launch your device emulator before the next command_
       - `$ yarn android` or  `$ yarn ios`
 
-### Author
-
-Follow me on Twitter: [@brunolemos](https://twitter.com/brunolemos)<br/>
-
-<a href="https://twitter.com/brunolemos" target="_blank"><img src="https://github.com/brunolemos.png?size=100" height="100" /></a>
-
-
 ## Who is using this on production
 
 Check out [DevHub](https://github.com/devhubapp/devhub).
