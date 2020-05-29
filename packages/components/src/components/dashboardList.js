@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -35,16 +35,16 @@ const data=[
 
 export default function dashboardList() {
   return (
-    <div className="container mt_50">	
-	<h1>Dashboard</h1>
-	<div className="d-flex flex-wrap mt_10 dashboard_block">
+    // <div className="container mt_50">	
+	// <h1>Dashboard</h1>
+	<Fragment className="d-flex flex-wrap mt_10 dashboard_block">
         {data.map(el=>{
             const {title, icon, text} = el;
             return (
-                <DashboardCard title={title} icon={icon} text={icon} />
+                <DashboardCard title={title} icon={icon} text={text} />
             );
         })}
-    </div>
-</div>
+    </Fragment>
+// </div>
   );
 };

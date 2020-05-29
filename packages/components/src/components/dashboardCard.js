@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from 'react-native';
 
 const Card = (props)=> {
     const { title='Inbox', icon='fa-envelope', text='Update your password and secure your account' } = props;
@@ -15,7 +16,8 @@ const Card = (props)=> {
 				</div>
 				</div>
 			</a>
-		</div>);
+        </div>
+    );
 }
 
 export default Card;
